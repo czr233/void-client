@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Void Client</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>VOID</h1>
+
+    <div class="selectors">
+      <button class="selector-btn" onclick="selectType('phone', this)">Phone</button>
+      <button class="selector-btn" onclick="selectType('email', this)">Email</button>
+      <button class="selector-btn" onclick="selectType('address', this)">Address</button>
+      <button class="selector-btn" onclick="selectType('ip', this)">IP</button>
+    </div>
+
+    <div id="input-section">
+      <input type="text" id="queryInput" placeholder="Enter your info...">
+      <button class="search-btn" onclick="startSearch()">Search</button>
+    </div>
+
+    <div id="results"></div>
+  </div>
+</body>
+</html>

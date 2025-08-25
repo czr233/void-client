@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url("assets/background.png") no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+  padding: 50px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  max-width: 800px;
+  margin: 50px auto;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.selectors {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.selector-btn {
+  background: #111;
+  border: 2px solid #a020f0;
+  color: #fff;
+  padding: 15px 25px;
+  font-size: 1.2em;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.selector-btn:hover {
+  background: #a020f0;
+  transform: scale(1.05);
+}
+
+.selector-btn.active {
+  box-shadow: 0 0 12px #a020f0;
+}
+
+#queryInput {
+  padding: 12px;
+  border-radius: 20px;
+  border: none;
+  background: rgba(200, 200, 200, 0.2);
+  color: #fff;
+  width: 50%;
+  font-size: 1em;
+  outline: none;
+  margin-right: 10px;
+}
+
+.search-btn {
+  background: #a020f0;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.search-btn:hover {
+  background: #7a0ac8;
+}
+
+.result-card {
+  background: #111;
+  border: 1px solid #333;
+  padding: 15px;
+  margin: 10px auto;
+  border-radius: 12px;
+  max-width: 600px;
+}
+
+.details-btn {
+  margin-top: 10px;
+  background: #222;
+  border: 1px solid #a020f0;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.details-btn:hover {
+  background: #a020f0;
+}
