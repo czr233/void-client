@@ -13,17 +13,13 @@
     "electron-builder": "^24.6.0"
   },
   "build": {
-    "appId": "com.czr233.void",
+    "appId": "com.void.client",
     "productName": "Void Client",
     "files": [
       "**/*"
     ],
-    "directories": {
-      "output": "dist"
-    },
     "win": {
-      "target": "nsis",
-      "icon": "assets/icon.png"
+      "target": "nsis"
     }
   }
 }
