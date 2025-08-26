@@ -21,12 +21,11 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-     - name: Build Electron app
-       run: npm run dist
-
+      - name: Build Electron app
+        run: npx electron-builder --win --x64
 
       - name: Upload release artifacts
         uses: actions/upload-artifact@v4
         with:
           name: void-client
-          path: dist/*.exe
+          path: dist/*
