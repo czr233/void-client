@@ -3,17 +3,18 @@ name: Build Void Client
 on:
   push:
     tags:
-      - "v*"
+      - 'v*'
 
 jobs:
   build:
     runs-on: windows-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repo
+        uses: actions/checkout@v4
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: 18
 
@@ -21,10 +22,10 @@ jobs:
         run: npm install
 
       - name: Build app
-        run: npm run build
+        run: npx electron-builder --win portable
 
-      - name: Upload build
-        uses: actions/upload-artifact@v3
+      - name: Upload exe
+        uses: actions/upload-artifact@v4
         with:
-          name: Void-Windows
-          path: dist/*
+          name: Void-Client-Windows
+          path: dist/*.exe
