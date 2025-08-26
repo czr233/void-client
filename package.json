@@ -1,28 +1,25 @@
 {
   "name": "void-client",
-  "version": "1.0.7",
+  "version": "1.0.10",
   "description": "Void Data Broker Scanner",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "dist": "electron-builder --win --x64"
-  },
-  "dependencies": {
-    "electron": "^25.0.0"
-  },
-  "devDependencies": {
-    "electron-builder": "^24.13.3"
+    "dist": "electron-builder --win --x64 --publish never"
   },
   "author": "czr233",
   "build": {
     "appId": "com.void.client",
-    "productName": "Void",
+    "productName": "Void Client",
     "files": [
       "**/*"
     ],
     "win": {
       "target": "nsis"
-    },
-    "publish": null
+    }
+  },
+  "devDependencies": {
+    "electron": "^25.0.0",
+    "electron-builder": "^24.13.3"
   }
 }
