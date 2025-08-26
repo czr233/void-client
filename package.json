@@ -9,7 +9,15 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "electron-builder": "^24.6.0"
     "electron": "^25.0.0",
     "electron-builder": "^24.6.0"
+  }
+}
+"build": {
+  "appId": "com.void.client",
+  "productName": "Void Client",
+  "win": {
+    "target": "nsis"
   }
 }
